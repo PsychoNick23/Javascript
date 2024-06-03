@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let num1 = document.getElementById("n1").value;
+            let num2 = document.getElementById("n2").value;
+            let result = +num1 + +num2
+
+            document.getElementById("PritnResult1").innerHTML = result;
+
+        }
+
+        function sub(){
+            let num1 = document.getElementById("n1").value;
+            let num2 = document.getElementById("n2").value;
+            let result = num1 - num2
+
+            document.getElementById("PritnResult2").innerHTML = result;
+
+        }
+
+        function mult(){
+            let num1 = document.getElementById("n1").value;
+            let num2 = document.getElementById("n2").value;
+            let result = num1 * num2
+
+            document.getElementById("PritnResult3").innerHTML = result;
+
+        }
+
+        function div(){
+            let num1 = document.getElementById("n1").value;
+            let num2 = document.getElementById("n2").value;
+            let result = num1 / num2
+
+            document.getElementById("PritnResult4").innerHTML = result;
+
+        }
+
+        
+    </script>
+
+</head>
+<body>
+
+    <input type="text" placeholder="Number 1" id="n1">
+    <input type="text" placeholder="Number 2" id="n2">
+    <br>
+    <br>
+
+    <button onclick="add()">Click for addition</button>
+    <button onclick="sub()">Click for substraction</button>
+    <button onclick="mult()">Click for multiplication</button>
+    <button onclick="div()">Click for division</button>
+    <h1>The result after addition is : <span id="PritnResult1"></span></h1>
+
+    <!-- <button onclick="sub()">Click for substraction</button> -->
+    <h1>The result after substraction is : <span id="PritnResult2"></span></h1>
+
+    <!-- <button onclick="mult()">Click for multiplication</button> -->
+    <h1>The result after multiplication is : <span id="PritnResult3"></span></h1>
+
+    <!-- <button onclick="div()">Click for division</button> -->
+    <h1>The result after division is : <span id="PritnResult4"></span></h1>
+
+</body>
+</html>
